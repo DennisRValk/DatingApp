@@ -6,6 +6,11 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { FileUploadModule } from 'ng2-file-upload';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { TimeagoModule } from "ngx-timeago";
+import { BrowserModule } from "@angular/platform-browser";
+
 
 @NgModule({
   declarations: [],
@@ -20,7 +25,11 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
       type: 'ball-spin-clockwise'
     }),
     FileUploadModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    PaginationModule.forRoot(),
+    ButtonsModule.forRoot(),
+    BrowserModule, 
+    TimeagoModule.forRoot()
   ],
 exports: [
   BsDropdownModule,
@@ -28,7 +37,11 @@ exports: [
   TabsModule,
   NgxSpinnerModule,
   FileUploadModule,
-  BsDatepickerModule
+  BsDatepickerModule,
+  PaginationModule,
+  ButtonsModule,
+  BrowserModule,
+  TimeagoModule
 ]
 })
 export class SharedModule { }
