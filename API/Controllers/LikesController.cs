@@ -17,7 +17,7 @@ namespace API.Controllers
             _userRepository = userRepository; 
         }
 
-        [HttpPost("username")]
+        [HttpPost("{username}")]
         public async Task<ActionResult> addLike(string username)
         {
             var sourceUserId = User.GetUserId();
