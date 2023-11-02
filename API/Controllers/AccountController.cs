@@ -32,7 +32,8 @@ namespace API.Controllers
     
             var result = await _userManager.CreateAsync(user, registerDto.Password);
 
-            if (!result.Succeeded) return BadRequest(result.Errors);
+            //if (!result.Succeeded) return BadRequest(result.Errors);
+            if (!result.Succeeded) return BadRequest("Da's niet goed he!!!!");
 
             var roleResult = await _userManager.AddToRoleAsync(user, "Member");
 
@@ -54,7 +55,7 @@ namespace API.Controllers
                 .Include(p => p.Photos) 
                 .SingleOrDefaultAsync(x => x.UserName == loginDto.Username);
                
-            if (user == null) return Unauthorized("invalid username");
+            if (user == null) return Unauthorized("Invalid username");
 
             var result = await _userManager.CheckPasswordAsync(user, loginDto.Password);
 
