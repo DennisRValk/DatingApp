@@ -18,9 +18,9 @@
         [maxDate]="maxDate"></app-date-picker>
     <app-text-input [formControl]="$any(registerForm.controls['city'])" [label]="'City'"></app-text-input>
     <app-text-input [formControl]="$any(registerForm.controls['country'])" [label]="'Country'"></app-text-input>
-    <app-text-input [formControl]="$any(registerForm.controls['password'])" [label]="'Password'"
+    <app-text-input [formControl]="$any(registerForm.controls['password'])" [label]="'Complex Password'"
         [type]="'password'"></app-text-input>
-    <app-text-input [formControl]="$any(registerForm.controls['confirmPassword'])" [label]="'Confirm Password'"
+    <app-text-input [formControl]="$any(registerForm.controls['confirmPassword'])" [label]="'Confirm Complex Password'"
         [type]="'password'"></app-text-input>
 
     <div class="row" *ngIf="validationErrors">
