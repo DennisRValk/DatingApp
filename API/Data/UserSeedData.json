@@ -51,7 +51,7 @@
         "Country": "Svalbard and Jan Mayen Islands",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/14.jpg",
+                "Url": "https://randomuser.me/api/portraits/women/10.jpg",
                 "IsMain": true
             }
         ]
@@ -89,7 +89,7 @@
         "Country": "Antigua and Barbuda",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/84.jpg",
+                "Url": "https://randomuser.me/api/portraits/women/44.jpg",
                 "IsMain": true
             }
         ]
@@ -108,7 +108,7 @@
         "Country": "British Indian Ocean Territory",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/men/90.jpg",
+                "Url": "https://randomuser.me/api/portraits/men/91.jpg",
                 "IsMain": true
             }
         ]
