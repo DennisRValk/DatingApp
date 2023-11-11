@@ -1,7 +1,7 @@
 <div class="mb-4 d-flex">
     <div class="btn-group" name="container">
         <button
-            class="btn btn-primary"
+            class="btn btn-primary me-1"
             btnRadio="Unread"
             [(ngModel)]="container"
             (click)="loadMessages()"
@@ -9,7 +9,7 @@
             <i class="fa fa-envelope"></i> Unread
         </button>
         <button 
-            class="btn btn-primary"
+            class="btn btn-primary me-1"
             btnRadio="Inbox"
             [(ngModel)]="container"
             (click)="loadMessages()"
@@ -17,7 +17,7 @@
             <i class="fa fa-envelope-open"></i> Inbox
         </button>
         <button
-            class="btn btn-primary"
+            class="btn btn-primary me-1"
             btnRadio="Outbox"
             [(ngModel)]="container"
             (click)="loadMessages()"
