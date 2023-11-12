@@ -67,16 +67,16 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-success btn-s mt-2 me-1" 
+            <button type="button" class="btn btn-success btn-sm mt-2 me-1" 
                 (click)="uploader?.uploadAll()"
                 [disabled]="!uploader?.getNotUploadedItems()?.length">
                 <span class="fa fa-upload"></span> Upload all
             </button>
-            <button type="button" class="btn btn-warning btn-s mt-2 me-1" (click)="uploader?.cancelAll()"
+            <button type="button" class="btn btn-warning btn-sm mt-2 me-1" (click)="uploader?.cancelAll()"
                 [disabled]="!uploader?.isUploading">
                 <span class="fa fa-ban"></span> Cancel all
             </button>
-            <button type="button" class="btn btn-danger btn-s mt-2 me-1" (click)="uploader?.clearQueue()"
+            <button type="button" class="btn btn-danger btn-sm mt-2 me-1" (click)="uploader?.clearQueue()"
                 [disabled]="!uploader?.queue?.length">
                 <span class="fa fa-trash"></span> Remove all
             </button>
