@@ -3,7 +3,6 @@ using API.Helpers;
 using API.Interfaces;
 using API.Services;
 using API.SignalR;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Extensions
 {
